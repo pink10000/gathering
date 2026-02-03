@@ -1,7 +1,7 @@
 # `gathering`
 
 # How do I get in?
-1. Be a UCSD student.
+1. Be a UCSD student or a former UCSD student.
 2. Have the buttons for `gathering`
 3. Have some content on your webpage.
 4. Submit a PR!
@@ -19,12 +19,12 @@ url = "https://example1.com"
 owner = "owner 1 (your github username is fine!)"
 ```
 
-After that, add the webring HTML somewhere on your site, like the sidebar or footer.
+After that, add the webring HTML somewhere on your site, like the sidebar or footer. Replace `YOUR_SLUG` with the slug you wrote above!
 
 ```html
-<a href="https://kytrinh.me/gathering/previous">&larr;</a>
-<a href="https://kytrinh.me/">gathering</a>
-<a href="https://kytrinh.me/gathering/next">&rarr;</a>
+<a href="https://kytrinh.me/gathering/YOUR_SLUG/previous">&larr;</a>
+<a href="https://kytrinh.me/gathering">gathering</a>
+<a href="https://kytrinh.me/gathering/YOUR_SLUG/next">&rarr;</a>
 ```
 
 And that's it!
