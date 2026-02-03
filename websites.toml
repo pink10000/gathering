@@ -1,3 +1,6 @@
+# tip: slug determines your url: https://kytrinh.me/gathering/<slug>/next
+# tip: owner doesn't show up anywhere on the website rn
+
 [[websites]]
 name = "kytrinh siteweb"
 slug = "kytrinh-siteweb"
