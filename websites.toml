@@ -30,3 +30,12 @@ about = "the internet garden I tend to"
 url = "https://godsped.com/"
 atom = "https://godsped.com/feed.xml"
 owner = "Samir-Rashid"
+[[websites]]
+name = "NAME OF WEBSITE"
+slug = "sometexthere" # determines your url: https://kytrinh.me/gathering/<slug>/next
+about = "WEBSITE DESCRIPTION"
+url = "https://URL/"
+atom = "" # optional
+rss = "" # optional
+owner = "YOUR PREFERRED NAME/USERNAME"
+
