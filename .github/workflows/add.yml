@@ -1,0 +1,27 @@
+name: wheeze
+on:
+  issues:
+    types: opened
+jobs:
+  splegh:
+    name: cough
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - name: Write to data/comments.yml
+        run: echo '${{ toJson(github.event) }}' >> websites.tmol
+      - name: Push changes
+        run: |
+          git config --local user.name 'Github Actions: ${{ github.action }} (for @${{ github.event.sender.login }})'
+          git config --local user.email '${{ github.event.sender.login }}@users.noreply.github.com'
+          git add websites.tmol
+          git commit -m "Add comment from @${{ github.event.sender.login }}
+
+          Resolves #${{ github.event.issue.number }}"
+          git push
+    permissions:
+      contents: write
+      issues: write
