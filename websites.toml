@@ -11,3 +11,11 @@ slug = "rootydev"
 about = "My personal site/blog. I'll put more stuff there eventually."
 url = "https://rooty.dev"
 owner = "otisdog8"
+
+[[websites]]
+name = "godsped"
+slug = "godsped"
+about = "the internet garden I tend to"
+url = "https://godsped.com/"
+atom = "https://godsped.com/feed.xml"
+owner = "Samir-Rashid"
