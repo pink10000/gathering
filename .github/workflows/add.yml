@@ -9,6 +9,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}
     steps:
+      - uses: actions/checkout@v4
       - name: Write to data/comments.yml
         run: echo '${{ toJson(github.event) }}' >> websites.tmol
       - name: Push changes
