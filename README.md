@@ -8,11 +8,14 @@ A webring is a collection of websites linked together in a loop. Each website co
 
 Webrings were popular in the early days of the internet as a way for website owners to promote each other's content and encourage community engagement.
 
+[Create an issue to join](https://github.com/pink10000/gathering/issues/new?template=join.md)
+
 ## How do I get in?
+
 1. Be a UCSD student or a former UCSD student.
-2. Put the navigation buttons for `gathering` somewhere on your webpage.
+2. Put the navigation buttons for `gathering` somewhere on your webpage (see below).
 3. Have some content on your webpage. Tell us about yourself!
-4. Submit a PR!
+4. [Create an issue to join](https://github.com/pink10000/gathering/issues/new?template=join.md) or create a PR manually.
 
 Take a look at `websites.toml` and put your website information down there. Not all fields need to be filled out, like `atom` or `rss`.
 
