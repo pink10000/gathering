@@ -26,6 +26,10 @@ jobs:
           gh pr create --title "Add @${{ github.event.sender.login }}" --body "Adds @${{ github.event.sender.login }}
 
           Resolves #${{ github.event.issue.number }}"
+          gh issue comment ${{ github.event.issue.number }} --body "ok."
     permissions:
       contents: write
+      issues: write
       pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
