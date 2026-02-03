@@ -23,7 +23,7 @@ jobs:
 
           Resolves #${{ github.event.issue.number }}"
           git push -u origin add-${{ github.event.issue.number }}
-          gh pr open --title "Add @${{ github.event.sender.login }}" --body "Adds @${{ github.event.sender.login }}
+          gh pr create --title "Add @${{ github.event.sender.login }}" --body "Adds @${{ github.event.sender.login }}
 
           Resolves #${{ github.event.issue.number }}"
     permissions:

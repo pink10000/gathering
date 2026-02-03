@@ -6,7 +6,7 @@ labels: question
 
 [[websites]]
 name = "NAME OF WEBSITE"
-slug = "sheeptester" # determines your url: https://kytrinh.me/gathering/<slug>/next
+slug = "sometexthere" # determines your url: https://kytrinh.me/gathering/<slug>/next
 about = "WEBSITE DESCRIPTION"
 url = "https://URL/"
 atom = "" # optional
