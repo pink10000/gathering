@@ -39,3 +39,12 @@ atom = "" # optional
 rss = "https://ryanbatubara.dev/rss.xml" # optional
 owner = "ryan"
 
+[[websites]]
+name = "sirpuddinlot"
+slug = "sirpuddinlot" # determines your url: https://kytrinh.me/gathering/<slug>/next
+about = "WEBSITE DESCRIPTION"
+url = "https://sirpuddinlot.github.io/"
+atom = "" # optional
+rss = "" # optional
+owner = "AZ"
+
