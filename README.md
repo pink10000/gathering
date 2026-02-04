@@ -2,6 +2,8 @@
 
 ## What is Webring?
 
+tldr; A webring is a closed, doubly linked list of websites.
+
 A webring is a collection of websites linked together in a loop. Each website contains links to the previous and next websites in the ring. If you navigate far enough, eventually you end up back where you started!
 
 <a href="https://upload.wikimedia.org/wikipedia/commons/9/97/Webringwork.png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Webringwork.png" width="512" alt="Webring example graphic"/></a>
