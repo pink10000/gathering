@@ -48,3 +48,12 @@ atom = "" # optional
 rss = "" # optional
 owner = "AZ"
 
+[[websites]]
+name = "dandu"
+slug = "dandu" # determines your url: https://kytrinh.me/gathering/<slug>/next
+about = "personal site"
+url = "https://dandu.dev/"
+atom = "" # optional
+rss = "" # optional
+owner = "Arnav Dandu"
+
