@@ -57,3 +57,11 @@ atom = "" # optional
 rss = "" # optional
 owner = "Arnav Dandu"
 
+[[websites]]
+name = "atarbinian"
+slug = "atarbinian"
+about = "personal site and blog"
+url = "https://atarbinian.com/"
+rss = "https://atarbinian.com/blog/index.xml"
+owner = "atar13"
+
