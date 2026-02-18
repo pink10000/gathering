@@ -65,3 +65,11 @@ url = "https://atarbinian.com/"
 rss = "https://atarbinian.com/blog/index.xml"
 owner = "atar13"
 
+[[websites]]
+name = "ssemtner"
+slug = "ssemtner"
+about = "personal site"
+url = "https://scottsemtner.com/"
+atom = "" # optional
+rss = "" # optional
+owner = "Scott Semtner"
