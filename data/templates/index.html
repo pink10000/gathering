@@ -17,7 +17,8 @@
     <div class="sidebar">
       <h1>{{ ring_name }}</h1>
       <p class="desc">
-        Webring of current and former UCSD students.
+        <a href="https://en.wikipedia.org/wiki/Webring">Webring</a> of current
+        and former UCSD students.
       </p>
       <p>
         github:
@@ -46,7 +47,7 @@
     </div>
 
     <div>
-      {% if sites %} vec![
+      {% if sites %} <span class="macro">vec!</span>[
       {% for site in sites %}
       <p class="site">
         <span class="keyword site-name">Site</span> {{ "{" }}

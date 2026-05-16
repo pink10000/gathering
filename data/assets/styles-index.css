@@ -1,97 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Generated from https://github.com/camellia-theme/camellia */
+  --base00: #17181c;
+  --base01: #1e1f24;
+  --base02: #26272b;
+  --base03: #333438;
+  --base04: #8f9093;
+  --base05: #b0b1b4;
+  --base06: #cbccce;
+  --base07: #e4e5e7;
+  --base08: #fa3867;
+  --base09: #f3872f;
+  --base10: #febd16;
+  --base11: #47e7ce;
+  --base12: #53ade1;
+  --base13: #3fd43b;
+  --base14: #ad60ff;
+  --base15: #fc3f2c;
+
+  display: flex;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  /* Tailwind default monospace stack, from Jacob's website */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  line-height: 1.1;
+  background-color: var(--base00);
+  color: var(--base07);
+  padding: 40px;
+  display: flex;
+  flex: auto;
+}
+
+.sidebar {
+  flex: none;
+  width: 34.5ch;
+  padding-right: 1ch;
+  border-right: 1px solid var(--base02);
+  margin-right: 1.5ch;
+
+  h1,
+  .desc {
+    margin-bottom: 1lh;
   }
-  
-  :root {
-    color-scheme: dark;
-  
-    /* Generated from https://github.com/camellia-theme/camellia */
-    --base00: #17181c;
-    --base01: #1e1f24;
-    --base02: #26272b;
-    --base03: #333438;
-    --base04: #8f9093;
-    --base05: #b0b1b4;
-    --base06: #cbccce;
-    --base07: #e4e5e7;
-    --base08: #fa3867;
-    --base09: #f3872f;
-    --base10: #febd16;
-    --base11: #47e7ce;
-    --base12: #53ade1;
-    --base13: #3fd43b;
-    --base14: #ad60ff;
-    --base15: #fc3f2c;
-  
-    display: flex;
+}
+
+h1 {
+  font: inherit;
+  color: var(--base08);
+}
+
+a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 50%, transparent);
+  text-decoration-style: dashed;
+
+  &:hover {
+    text-decoration-color: currentColor;
+    text-decoration-style: solid;
   }
-  
-  html,
+}
+
+.site {
+  padding-left: 8ch;
+  text-indent: -4ch;
+}
+.keyword {
+  font-weight: bold;
+  color: var(--base10);
+}
+.symbol {
+  color: var(--base14);
+}
+.string {
+  color: var(--base13);
+}
+.macro {
+  color: var(--base11);
+}
+
+.faded {
+  color: var(--base02);
+}
+
+@media (max-width: 700px) {
   body {
-    height: 100%;
+    flex-direction: column;
+
+    > * {
+      flex: none;
+    }
   }
-  
-  body {
-    /* Tailwind default monospace stack, from Jacob's website */
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
-    line-height: 1.1;
-    background-color: var(--base00);
-    color: var(--base07);
-    padding: 40px;
-    display: flex;
-  }
-  
   .sidebar {
-    flex: none;
-    width: 34ch;
-    border-right: 1px solid var(--base02);
-    padding-right: 0.5ch;
-    margin-right: 1.5ch;
-  
-    h1,
-    .desc {
-      margin-bottom: 1lh;
-    }
+    width: unset;
+    border-right: none;
+    margin-right: 0;
+    border-bottom: 1px solid var(--base02);
+    padding-bottom: 1.5lh;
+    margin-bottom: 1.5lh;
   }
-  
-  h1 {
-    font: inherit;
-    color: var(--base08);
-  }
-  
-  a {
-    color: inherit;
-    text-decoration-color: color-mix(in srgb, currentColor 50%, transparent);
-    text-decoration-style: dashed;
-  
-    &:hover {
-      text-decoration-color: currentColor;
-      text-decoration-style: solid;
-    }
-  }
-  
-  .site {
-    padding-left: 8ch;
-    text-indent: -4ch;
-  }
-  .keyword {
-    font-weight: bold;
-    color: var(--base10);
-  }
-  .site-name {
-    color: var(--base08);
-  }
-  .symbol {
-    color: var(--base14);
-  }
-  .string {
-    color: var(--base13);
-  }
-  
-  .faded {
-    color: var(--base02);
-  }
-  
+}
