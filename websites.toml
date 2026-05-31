@@ -6,6 +6,8 @@ name = "kytrinh siteweb"
 slug = "kytrinh-siteweb"
 about = "website about stuff i've done and things i like"
 url = "https://kytrinh.me"
+rss = "https://kytrinh.me/rss.xml"
+atom = "https://kytrinh.me/atom.xml"
 owner = "pink10000"
 
 [[websites]]
